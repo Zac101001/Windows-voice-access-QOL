@@ -1,0 +1,26 @@
+#1 AI agent:
+
+Aplicația sunt 2 fișiere PowerShell + documentație:
+
+Fișierele aplicației
+Fișier	Rol
+C:\Users\ZAC\Documents\VoiceAccessTray.ps1	Aplicația principală (tray, buton ON/OFF, secvența cu Command mode). ~29 KB
+C:\Users\ZAC\Documents\Hide-VoiceAccessBar.ps1	Helper simplu ascunde/arată bara (folosit manual)
+Documentație (pentru alt agent AI)
+Fișier	Rol
+C:\Users\ZAC\Documents\VoiceAccessBackup\commands-mode-implementation.md	Cum funcționează implementarea (secvența, de ce merge așa, limitări)
+C:\Users\ZAC\Documents\VoiceAccessBackup\command-mode-experiments.md	Toate metodele încercate + rezultate
+Backup-uri
+C:\Users\ZAC\Documents\VoiceAccessBackup\ — versiunile anterioare: VoiceAccessTray.2026-10-17_150944.ps1 (înainte de Command mode), VoiceAccessTray.pre-commands.2026-10-17_201323.ps1, Hide-VoiceAccessBar.2026-10-17_150944.ps1.
+
+Ce mai ține de aplicație (nu sunt fișiere, dar contează pentru înțelegere)
+Task programat: VoiceAccessTray (rulat la logon cu -AutoHide, RunLevel Highest)
+Registru:
+HKCU\Software\VoiceAccessTray → AutoSetup (bifa ON/OFF)
+HKCU\Software\Microsoft\VoiceAccess → VoiceAccessMicrophoneId
+HKCU\Software\Microsoft\Windows NT\CurrentVersion\Accessibility → Configuration
+Log: %LOCALAPPDATA%\VoiceAccessTray\tray.log
+Ca să dai altui agent tot contextul, dă-i cele 4 documente/fișiere din Documents + VoiceAccessBackup (mai ales commands-mode-implementation.md și VoiceAccessTray.ps1).
+
+--------------------------------------------------------------------------------------------
+
