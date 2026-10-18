@@ -1,0 +1,19 @@
+# Build output (regenerate with Installer\build.ps1)
+Installer/dist/
+Installer/payload/
+
+# Local backups of the app / script
+VoiceAccessApp-Backup-*/
+*.2026-*.ps1
+*.pre-commands.*.ps1
+*.live-pre-v2-*.ps1
+
+# Logs
+*.log
+tray.log*
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
